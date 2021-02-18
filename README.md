@@ -6,7 +6,7 @@
 
 ```json
 {
-  "extends" [
+  "extends": [
     "config:base",
     "kubernetes"
   ]
