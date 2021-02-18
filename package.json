@@ -36,7 +36,7 @@
           "extends": [
             "kubernetes:monorepo"
           ],
-          "group": "kubernetes"
+          "groupName": "kubernetes"
         }
       ]
     }
