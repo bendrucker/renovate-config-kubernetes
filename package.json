@@ -1,0 +1,40 @@
+{
+  "name": "renovate-config-kubernetes",
+  "version": "1.0.0",
+  "description": "Renovate preset for Kubernetes client development",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bendrucker/renovate-config-kubernetes.git"
+  },
+  "keywords": [
+    "renovate",
+    "renovate-config"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (https://www.bendrucker.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/renovate-config-kubernetes/issues"
+  },
+  "homepage": "https://github.com/bendrucker/renovate-config-kubernetes#readme",
+  "devDependencies": {
+    "renovate": "^24.52.1"
+  },
+  "renovate-config": {
+    "monorepo": {
+      "description": "Packages from the https://github.com/kubernetes/kubernetes monorepo",
+      "matchDatasources": "go",
+      "matchPackagePatterns": ["^k8s.io/"]
+    },
+    "default": {
+      "packageRules": [
+        {
+          "extends": ["kubernetes:monorepo"],
+          "group": "kubernetes"
+        }
+      ]
+    }
+  }
+}
