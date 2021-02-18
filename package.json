@@ -27,7 +27,7 @@
       "description": "Packages from the https://github.com/kubernetes/kubernetes monorepo",
       "matchDatasources": "go",
       "matchPackagePatterns": [
-        "^k8s.io/"
+        "^k8s\\.io/"
       ]
     },
     "default": {
