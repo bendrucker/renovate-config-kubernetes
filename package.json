@@ -26,12 +26,16 @@
     "monorepo": {
       "description": "Packages from the https://github.com/kubernetes/kubernetes monorepo",
       "matchDatasources": "go",
-      "matchPackagePatterns": ["^k8s.io/"]
+      "matchPackagePatterns": [
+        "^k8s.io/"
+      ]
     },
     "default": {
       "packageRules": [
         {
-          "extends": ["kubernetes:monorepo"],
+          "extends": [
+            "kubernetes:monorepo"
+          ],
           "group": "kubernetes"
         }
       ]
