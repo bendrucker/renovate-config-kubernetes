@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-kubernetes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Renovate preset for Kubernetes client development",
   "scripts": {
     "test": "renovate-config-validator"
